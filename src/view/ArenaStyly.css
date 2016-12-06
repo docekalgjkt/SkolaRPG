@@ -1,0 +1,27 @@
+.predmetButton {
+	-fx-background-color: #b30000;
+	-fx-text-fill: #ffffff;
+	-fx-border-radius: 30;
+	-fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.predmetButton:selected {
+	-fx-background-color: #e6b800;
+	-fx-text-fill: #ffffff;
+	-fx-border-radius: 30;
+	-fx-effect: dropshadow( one-pass-box , grey , 4 , 0.0 , 1 , 0 );
+}
+
+.predmetButton:hover {
+	-fx-background-color: #e6b800;
+	-fx-text-fill: #ffffff;
+	-fx-border-radius: 30;
+	-fx-effect: dropshadow( one-pass-box , grey , 4 , 0.0 , 1 , 0 );
+}
+
+.predmetButton:focused {
+	-fx-background-color: #e6b800;
+	-fx-text-fill: #ffffff;
+	-fx-border-radius: 30;
+	-fx-effect: dropshadow( one-pass-box , grey , 4 , 0.0 , 1 , 0 );
+}

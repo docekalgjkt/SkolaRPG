@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ArenaController">
+   <children>
+      <AnchorPane fx:id="spodniCast" layoutX="14.0" layoutY="456.0" prefHeight="268.0" prefWidth="1004.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <GridPane alignment="CENTER" layoutX="790.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="345.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="70.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="147.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="146.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" text="Typ:" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" text="Hodnota:" GridPane.rowIndex="2" />
+                  <Label fx:id="typ" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="hodnota" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Button fx:id="boj" mnemonicParsing="false" onAction="#bojHandler" text="BOJ!" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="horniCast" prefHeight="430.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="bojovnik1Label" layoutX="169.0" layoutY="92.0" text="Label" />
+            <Label fx:id="bojovnik2Label" layoutX="1054.0" layoutY="92.0" text="Label" />
+            <Label fx:id="pocetKol" layoutX="626.0" layoutY="14.0" />
+            <ImageView fx:id="hracImageView" fitHeight="268.0" fitWidth="200.0" layoutX="104.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="nepritelImageView" fitHeight="268.0" fitWidth="200.0" layoutX="972.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="hracSytostProgressBar" layoutX="378.0" layoutY="92.0" prefHeight="23.0" prefWidth="136.0" progress="0.0" />
+            <ProgressBar fx:id="hracKofeinProgressBar" layoutX="378.0" layoutY="125.0" prefHeight="23.0" prefWidth="136.0" progress="0.0" />
+            <ProgressBar fx:id="hracNikotinProgressBar" layoutX="378.0" layoutY="157.0" prefHeight="23.0" prefWidth="136.0" progress="0.0" />
+            <ProgressBar fx:id="nepritelHPPorgressBar" layoutX="823.0" layoutY="92.0" prefHeight="23.0" prefWidth="136.0" progress="0.0" />
+            <Label fx:id="hracSytostLabel" layoutX="429.0" layoutY="93.0" text="Label" />
+            <Label fx:id="hracKofeinLabel" layoutX="429.0" layoutY="126.0" text="Label" />
+            <Label fx:id="hracNikotinLabel" layoutX="429.0" layoutY="158.0" text="Label" />
+            <Label fx:id="nepritelHPLabel" layoutX="874.0" layoutY="93.0" text="Label" />
+            <Label layoutX="322.0" layoutY="92.0" text="Sytost:" />
+            <Label layoutX="320.0" layoutY="126.0" text="Kofein:" />
+            <Label layoutX="314.0" layoutY="158.0" text="Nikotin:" />
+            <Label layoutX="790.0" layoutY="92.0" text="HP:" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="koncovaCast" layoutX="540.0" layoutY="260.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="vyhraProhraImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
